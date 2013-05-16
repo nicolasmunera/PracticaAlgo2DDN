@@ -59,7 +59,6 @@ vector <int> encontrarCaminoMasCorto(int nodoFinal){
     }
     reverse(camino.begin(), camino.end());
     for(int i = 0; i < 8; i++){
-        
         cout << camino[i] << endl;
         if(i==nodoFinal){
             break;
@@ -87,7 +86,7 @@ int main(){
         }
     }
     cout << "--Dijkstra--- \n" ;
-    dijkstra(inicial, final);
+    dijkstra(inicial, nodos);
     
     cout << "--Camino Corto--- \n" ;
     encontrarCaminoMasCorto(final);
